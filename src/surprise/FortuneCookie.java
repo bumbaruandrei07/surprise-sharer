@@ -29,12 +29,13 @@ public class FortuneCookie implements ISurprise {
             {"If you want to live a happy life, tie it to a goal, not to people or things", "Albert Einstein"},
             {"Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.", "Steve Jobs"}
     };
-    private FortuneCookie(String message, String author){
+
+    private FortuneCookie(String message, String author) {
         this.message = message;
         this.author = author;
     }
 
-    public static FortuneCookie generate(){
+    public static FortuneCookie generate() {
         int random = RandomHelper.getRandomInt(QUOTES.length);
         return new FortuneCookie(QUOTES[random][0], QUOTES[random][1]);
     }
@@ -46,7 +47,7 @@ public class FortuneCookie implements ISurprise {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "ITEM: Fortune Cookie || MESSAGE: " + message + " || AUTHOR: " + author;
     }
 

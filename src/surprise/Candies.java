@@ -27,7 +27,7 @@ public class Candies implements ISurprise {
 
     @Override
     public void enjoy() {
-        System.out.println(" You received: " + amount + " " + type);
+        System.out.println("You received: " + amount + " " + type);
     }
 
     @Override

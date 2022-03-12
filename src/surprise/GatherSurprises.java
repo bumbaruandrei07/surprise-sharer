@@ -4,14 +4,14 @@ import helpers.RandomHelper;
 
 import java.util.ArrayList;
 
+//this class can't be extended by another class
 public final class GatherSurprises {
 
     private final static int numberOfSurprises = 3;
     //o metoda statica, gather(int n), ce primeste un numar intreg n si returneaza un array continand n surprize.
     //o metoda statica, gather(), care va returna o singura surpriza.
 
-    // We prevent instantiation of the class:
-
+    // We prevent instantiation of the class using a private constructor:
     private GatherSurprises() {
 
     }

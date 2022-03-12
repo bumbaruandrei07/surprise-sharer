@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 
 public class BagFactory implements IBagFactory {
 
-
     @Override
     public IBag makeBag(String type) {
         type = type.toUpperCase();

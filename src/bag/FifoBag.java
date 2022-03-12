@@ -15,6 +15,5 @@ public class FifoBag extends AbstractBag {
         super.removeInSurpriseList(0);
         // return the surprise:
         return firstSurprise;
-
     }
 }
