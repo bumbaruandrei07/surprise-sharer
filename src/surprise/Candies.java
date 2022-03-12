@@ -2,7 +2,7 @@ package surprise;
 
 import helpers.RandomHelper;
 
-public class Candies implements ISurprize {
+public class Candies implements ISurprise {
 
     private static final String[] types = {"Milka", "Ferrero Rocher", "Kinder Pinguin", "Truffes"};
     private static final int candiesNo = 50;

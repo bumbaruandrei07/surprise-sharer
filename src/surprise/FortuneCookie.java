@@ -2,7 +2,7 @@ package surprise;
 
 import helpers.RandomHelper;
 
-public class FortuneCookie implements ISurprize {
+public class FortuneCookie implements ISurprise {
 
     private String message;
     private String author;

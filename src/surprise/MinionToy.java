@@ -10,7 +10,7 @@ package surprise;
 
 import helpers.RandomHelper;
 
-public class MinionToy implements ISurprize {
+public class MinionToy implements ISurprise {
 
     private static final String[] NAME_LIST = {"Dave", "Carl", "Kevin", "Stuart", "Jerry", "Tim"};
     private static int crtNameIndex = -1;
