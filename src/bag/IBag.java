@@ -9,10 +9,9 @@ public interface IBag {
     public static final String[] bagTypes = {"RANDOM", "FIFO", "LIFO"};
 
     //adds a surprise in the bag
-
     void put(ISurprise newSurprise);
-
     void put(ArrayList<ISurprise> newSurpriseList);
+
 
     //adds all the surprises from another IBag
     // -> the 'bagOfSurprises' will be empty() afterwards
