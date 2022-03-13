@@ -3,7 +3,7 @@ package give;
 import bag.BagFactory;
 import bag.IBag;
 import bag.IBagFactory;
-import surprise.GatherSurprises;
+import gather.GatherSurprises;
 import surprise.ISurprise;
 
 import java.util.concurrent.TimeUnit;
@@ -23,7 +23,6 @@ public abstract class AbstractGiveSurprises implements IGiveSurprise {
         }
         this.waitTime = waitTime;
     }
-
 
     @Override
     public void put(ISurprise newSurprise) {
@@ -62,11 +61,6 @@ public abstract class AbstractGiveSurprises implements IGiveSurprise {
         }
         giveWithPassion();
         System.out.println("============");
-    }
-
-    @Override
-    public void gatherAndPut(int number) {
-        container.put(GatherSurprises.gather(number));
     }
 
     @Override

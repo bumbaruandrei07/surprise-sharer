@@ -1,6 +1,10 @@
-package surprise;
+package gather;
 
 import helpers.RandomHelper;
+import surprise.Candies;
+import surprise.FortuneCookie;
+import surprise.ISurprise;
+import surprise.MinionToy;
 
 import java.util.ArrayList;
 
@@ -16,7 +20,7 @@ public final class GatherSurprises {
 
     }
 
-    private static ISurprise gather() {
+    public static ISurprise gather() {
         int randomNum = RandomHelper.getRandomInt(numberOfSurprises);
         switch (randomNum) {
             case 0:

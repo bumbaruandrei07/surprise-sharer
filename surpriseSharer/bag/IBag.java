@@ -10,7 +10,6 @@ public interface IBag {
 
     //adds a surprise in the bag
     void put(ISurprise newSurprise);
-    void put(ArrayList<ISurprise> newSurpriseList);
 
 
     //adds all the surprises from another IBag

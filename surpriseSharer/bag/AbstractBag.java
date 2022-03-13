@@ -14,7 +14,6 @@ abstract class AbstractBag implements IBag {
         while (!bagOfSurprises.isEmpty()) {
             put(bagOfSurprises.takeOut());
         }
-
     }
 
     @Override
@@ -22,12 +21,6 @@ abstract class AbstractBag implements IBag {
         surpriseList.add(newSurprise);
     }
 
-    @Override
-    public void put(ArrayList<ISurprise> newSurpriseList) {
-        for (int i = 0; i < newSurpriseList.size(); i++) {
-            newSurpriseList.forEach(element -> this.put(element));
-        }
-    }
 
     @Override
     public boolean isEmpty() {

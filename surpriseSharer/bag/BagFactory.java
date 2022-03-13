@@ -9,14 +9,13 @@ public class BagFactory implements IBagFactory {
     @Override
     public IBag makeBag(String type) {
         type = type.toUpperCase();
-        //finding the index of String in allowed types of bags
-        int index = Arrays.stream(IBag.bagTypes).collect(Collectors.toList()).indexOf(type);
-        switch (index) {
-            case 0:
+
+        switch (type) {
+            case "RANDOM":
                 return new RandomBag();
-            case 1:
+            case "FIFO":
                 return new FifoBag();
-            case 2:
+            case "LIFO":
                 return new LifoBag();
             default:
                 System.out.println("This type of bag doesn't exist");
