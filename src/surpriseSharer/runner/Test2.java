@@ -17,7 +17,6 @@ public class Test2 {
 
         System.out.println("\n\t\t\t Testing RANDOM \t\n");
         testRandom();
-
     }
 
     public static void testFifo() {
@@ -26,12 +25,10 @@ public class Test2 {
         ISurprise s3 = GatherSurprises.gather();
         ISurprise s4 = GatherSurprises.gather();
 
-
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s3);
         System.out.println(s4);
-
 
         GiveSurpriseAndApplause g = new GiveSurpriseAndApplause("FIFO", 1);
 
@@ -41,7 +38,6 @@ public class Test2 {
         g.put(s4);
 
         System.out.println("Giving all...");
-
         g.giveAll();
     }
 
@@ -62,9 +58,7 @@ public class Test2 {
         g.put(s3);
         g.put(s4);
 
-
         System.out.println("Giving one...");
-
         g.giveOne();
     }
 
@@ -87,7 +81,6 @@ public class Test2 {
 
         System.out.println("Giving all...");
         g.giveAll();
-
     }
 }
 
