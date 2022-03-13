@@ -1,3 +1,7 @@
+/*
+FortuneCookie:	Reprezinta o surpriza de tipul Fortune Cookie in care persoana va primi un mesaj simbolic, care sa o calauzeasca in viitor.
+Operare:	    Clasa primeste mesajul (i.e. String) la constructia obiectului. Acesta va fi afisat la output in momentul „deschiderii surprizei“.
+ */
 package surpriseSharer.surprise;
 import surpriseSharer.helpers.RandomHelper;
 public class FortuneCookie implements ISurprise{
@@ -49,7 +53,3 @@ public class FortuneCookie implements ISurprise{
     }
 }
 
-/*
-FortuneCookie	Reprezinta o surpriza de tipul Fortune Cookie in care persoana va primi un mesaj simbolic, care sa o calauzeasca in viitor.
-Operare:	Clasa primeste mesajul (i.e. String) la constructia obiectului. Acesta va fi afisat la output in momentul „deschiderii surprizei“.
- */

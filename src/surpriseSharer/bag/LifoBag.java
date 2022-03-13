@@ -9,7 +9,7 @@ public class LifoBag extends AbstractBag {
         if(getSurpriseList().isEmpty()){
             return null;
         }
-        // Copy last surprise IN:
+        // Copy last surprise in surpriseList:
         ISurprise lastInSurprise = getSurpriseList().get(getSurpriseList().size() - 1);
         // Remove last surprise from surpriseList:
         super.removeInSurpriseList(getSurpriseList().size() - 1);

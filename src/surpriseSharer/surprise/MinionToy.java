@@ -1,3 +1,9 @@
+/*
+MinionToy	Surpriza va fi o jucarie Minion.
+Operare:	Clasa primeste la crearea obiectelor numele minionului.
+La deschiderea surprizei, se va afisa un mesaj sugestiv la output, ce include detaliile jucariei primite.
+ */
+
 package surpriseSharer.surprise;
 import surpriseSharer.helpers.RandomHelper;
 
@@ -33,9 +39,3 @@ public class MinionToy implements ISurprise{
     }
 }
 
-/*
-MinionToy	Surpriza va fi o jucarie Minion.
-Operare:	Clasa primeste la crearea obiectelor numele minionului.
-La deschiderea surprizei, se va afisa un mesaj sugestiv la output, ce include detaliile jucariei primite.
-
- */

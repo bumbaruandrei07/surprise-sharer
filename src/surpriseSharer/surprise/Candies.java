@@ -1,5 +1,17 @@
-package surpriseSharer.surprise;
+/*
+Surpriza contine un numar aleator de bomboane, de un anumit tip.
+Operare:	Constructorul clasei va primi numarul de bomboane si tipul acestora.
+La executia surprizei se va afisa un mesaj relevant, in functie de starea interna a obiectului-surpriza.
+ */
 
+/*
+Generate() :
+FortuneCookie	Clasa va contine un vector de minim 20 de zicale (+ autorul acestora) la alegere. Poti lua colectia de zicale de pe un site de specialitate.
+La apelul metodei generate(), metoda va genera un numar aleator si va alege elementul din array in consecinta. Ulterior, va crea o (noua) surpriza corespunzator.
+
+ */
+
+package surpriseSharer.surprise;
 import surpriseSharer.helpers.RandomHelper;
 
 public class Candies implements ISurprise{
@@ -36,15 +48,3 @@ public class Candies implements ISurprise{
     }
 }
 
-/*
-Surpriza contine un numar aleator de bomboane, de un anumit tip.
-Operare:	Constructorul clasei va primi numarul de bomboane si tipul acestora.
-La executia surprizei se va afisa un mesaj relevant, in functie de starea interna a obiectului-surpriza.
- */
-
-/*
-Generate() :
-FortuneCookie	Clasa va contine un vector de minim 20 de zicale (+ autorul acestora) la alegere. Poti lua colectia de zicale de pe un site de specialitate.
-La apelul metodei generate(), metoda va genera un numar aleator si va alege elementul din array in consecinta. Ulterior, va crea o (noua) surpriza corespunzator.
-
- */

@@ -54,7 +54,7 @@ public abstract class AbstractGiveSurprises implements IGiveSurprise{
 
     @Override
     public void giveAll(){
-        // Sleep for X seconds - code snippet
+        // Sleep for X seconds
         DisplayHelper.separate();
         while (!container.isEmpty()){
             this.give();
