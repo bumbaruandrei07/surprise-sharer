@@ -10,36 +10,39 @@ package surprise;
 
 import helpers.RandomHelper;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MinionToy implements ISurprise {
 
-    private static final String[] NAME_LIST = {"Dave", "Carl", "Kevin", "Stuart", "Jerry", "Tim"};
-    private static int crtNameIndex = -1;
     String name;
+    static ArrayList<String> minions = new ArrayList<String>(Arrays.asList("Dave","Carl", "Kevin", "Stuart", "Jerry", "Tim"));
+    static int cnt = 0;
 
-    MinionToy(String name){
-        this.name = name;
+    private MinionToy (int cnt) {
+        this.name = minions.get(cnt);
     }
 
-    public static MinionToy generate(){
-        if (crtNameIndex < 0){
-            crtNameIndex = RandomHelper.getRandomInt(NAME_LIST.length);
+    public static MinionToy generate() {
+        MinionToy minionToy = new MinionToy(cnt);
+        cnt++;
+        if(cnt == minions.size()) {
+            cnt = 0;
         }
-
-        MinionToy newMinionToy = new MinionToy(NAME_LIST[crtNameIndex]);
-        crtNameIndex++;
-        crtNameIndex %= NAME_LIST.length;
-
-        return newMinionToy;
+        return minionToy;
+    }
+    public String getName() {
+        return this.name;
     }
 
     @Override
     public void enjoy() {
-        System.out.println("Here is minion " + name + "!");
+        System.out.println("Here is minion " + getName() + "!");
     }
 
     @Override
     public String toString(){
-        return "ITEM: MINION || NAME: " + name;
+        return "ITEM: MINION || NAME: " + getName();
     }
 }
 
