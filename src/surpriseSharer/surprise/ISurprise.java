@@ -1,4 +1,4 @@
-package surprise;
+package surpriseSharer.surprise;
 
 public interface ISurprise {
 
