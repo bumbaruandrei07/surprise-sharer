@@ -3,7 +3,7 @@ package surpriseSharer.give;
 
 public class GiveSurpriseAndSing extends AbstractGiveSurprises{
 
-    GiveSurpriseAndSing(String containerType, int waitTime) {
+    public GiveSurpriseAndSing(String containerType, int waitTime) {
         super(containerType, waitTime);
     }
 
