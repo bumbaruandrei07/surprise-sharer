@@ -27,13 +27,11 @@ public class Candies implements ISurprise{
         }
         this.amount = amount;
         this.type = type.toLowerCase();
-
     }
 
     public static Candies generate(){
         int randomNum = RandomHelper.getNewRandomInt(MAX_NUMBER_OF_CANDIES);
         int randomType = RandomHelper.getNewRandomInt(TYPE_LIST.length);
-
         return new Candies(randomNum, TYPE_LIST[randomType]);
     }
 
