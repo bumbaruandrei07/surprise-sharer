@@ -8,15 +8,19 @@ import surpriseSharer.surprise.MinionToy;
 
 import java.util.ArrayList;
 
+//this class can't be extended because it's final
 public final class GatherSurprises {
+
     private static final int NUMBER_OF_SURPRISE_TYPES = 3;
 
-    //o metoda statica, gather(int n), ce primeste un numar intreg n si returneaza un array continand n surprize.
-    //o metoda statica, gather(), care va returna o singura surpriza.
+    //TODO -> o metoda statica, gather(int n), ce primeste un numar intreg n si returneaza un array continand n surprize.
+    //TODO -> o metoda statica, gather(), care va returna o singura surpriza.
 
 
     // We prevent instantiation of the class:
-    private GatherSurprises(){}
+    private GatherSurprises(){
+
+    }
 
     public static ISurprise gather() {
         int randomNum = RandomHelper.getNewRandomInt(NUMBER_OF_SURPRISE_TYPES);

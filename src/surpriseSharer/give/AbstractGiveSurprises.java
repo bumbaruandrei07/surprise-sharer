@@ -61,7 +61,6 @@ public abstract class AbstractGiveSurprises implements IGiveSurprise{
         }
         giveWithPassion();
         DisplayHelper.separate();
-
     }
 
     @Override
@@ -74,6 +73,10 @@ public abstract class AbstractGiveSurprises implements IGiveSurprise{
         return container;
     }
 
+
+//    tine locul unei actiuni ce va fi efectuata dupa daruirea fiecarei surprize (ex: aplauze, o imbratisare etc.).
+//            → Obs: aceasta metoda va fi apelata imediat dupa oferirea unei surprize, indiferent de metoda apelata pentru impartirea surprizelor (i.e. give() sau giveAll()).
+//            → Obs2: metoda va fi vizibila doar in interiorul pachetului si pe lantul de mostenire. -> protected
     protected abstract void giveWithPassion();
 
 }

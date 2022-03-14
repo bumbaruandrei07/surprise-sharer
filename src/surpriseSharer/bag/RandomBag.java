@@ -3,6 +3,8 @@ package surpriseSharer.bag;
 import surpriseSharer.helpers.RandomHelper;
 import surpriseSharer.surprise.ISurprise;
 
+
+//implementation of a random bag using the abstract class
 public class RandomBag extends AbstractBag {
 
     @Override
