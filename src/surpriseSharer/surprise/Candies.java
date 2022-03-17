@@ -21,7 +21,8 @@ public class Candies implements ISurprise{
     private int amount;
     private String type;
 
-    Candies(int amount, String type){
+    public Candies(int amount, String type){
+        // at least one candie...
         if (amount < 0){
             amount = 1;
         }

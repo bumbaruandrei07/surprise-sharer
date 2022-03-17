@@ -14,19 +14,17 @@ public class Test {
 
     static void scenario01(Scanner sc) {
 
-        // Let's create a GiveSurprise Object that will contain Bag #1
-        // Pick a bagType (Random, lifo, fifo);
+        // TODO -> create a GiveSurprise Object that will contain Bag #1
+        //      -> Pick a bagType (Random, lifo, fifo);
         String bagType;
         int waitTime;
 
-            System.out.println("Let's create Bag #1");
-            System.out.print("What type of bag do you want (Random, Lifo, Fifo)?\t");
-            bagType = sc.nextLine().toUpperCase();
-            System.out.print("How long do you want to wait between each gift given (in s)?\t");
-            waitTime = sc.nextInt();
-            sc.nextLine();
-
-
+        System.out.println("Let's create Bag #1");
+        System.out.print("What type of bag do you want (Random, Lifo, Fifo)?\t");
+        bagType = sc.nextLine().toUpperCase();
+        System.out.print("How long do you want to wait between each gift given (in s)?\t");
+        waitTime = sc.nextInt();
+        sc.nextLine();
 
         // Create a GiveSurpriseFactory based on user Input.
         GiveSurpriseFactory myGiveSurpriseFactory = new GiveSurpriseFactory(bagType, waitTime);
@@ -46,9 +44,9 @@ public class Test {
         IBagFactory myBagFactory = new BagFactory();
         IBag myBag;
 
-            System.out.println("Let's Create Bag #2");
-            System.out.print("What type of bag do you want (Random, Lifo, Fifo)?\t");
-            bagType = sc.nextLine().toUpperCase();
+        System.out.println("Let's Create Bag #2");
+        System.out.print("What type of bag do you want (Random, Lifo, Fifo)?\t");
+        bagType = sc.nextLine().toUpperCase();
 
         myBag = myBagFactory.makeBag(bagType);
 
@@ -58,16 +56,16 @@ public class Test {
         myBag.printSurpriseList();
         DisplayHelper.separate();
 
-        // Add One or All surprises to the first bag?
+        // Add one or all surprises to the first bag
         String oneOrAll;
         do {
             System.out.println("Add ONE or ALL objects to bag #1 using objects from bag #2?");
             oneOrAll = sc.nextLine().toUpperCase();
         } while (!oneOrAll.equals("ONE") && !oneOrAll.equals("ALL"));
 
-        if (oneOrAll.equals("ONE")){
+        if (oneOrAll.equals("ONE")) {
             myGiveSurprise.put(myBag.takeOut());
-        } else if (oneOrAll.equals("ALL")){
+        } else if (oneOrAll.equals("ALL")) {
             myGiveSurprise.put(myBag);
         }
 
@@ -80,13 +78,11 @@ public class Test {
         myBag.printSurpriseList();
         DisplayHelper.separate();
 
-
-        //Give 1 surprise or give AllSurprises?
+        //Give one surprise or give all surprises
         System.out.println("Let's go back to te original myGiveSurprise object: ");
         while (!myGiveSurprise.getContainer().isEmpty()) {
             System.out.print("Do you want to give one surprise or all surprises (type ONE or ALL)? \t");
             String userInput = sc.nextLine().toUpperCase();
-
             if (userInput.equals("ONE")) {
                 myGiveSurprise.giveOne();
             } else if (userInput.equals("ALL")) {
