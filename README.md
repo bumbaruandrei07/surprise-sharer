@@ -1,4 +1,4 @@
-# SurpriseSharer App 
+# Surprise Sharer App 
 #Devmind Academy Project
 The purpose of the application is to obtain a generic system capable to:
 
